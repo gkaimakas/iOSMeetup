@@ -3,17 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E1E9121C50F0D575BD3784 /* Pods_iOSMeetupUI_iOSMeetupUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2EAB028D8E849F6BAC1D5C /* Pods_iOSMeetupUI_iOSMeetupUITests.framework */; };
 		132F090123733ED900CC5A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F090023733ED900CC5A74 /* AppDelegate.swift */; };
 		132F090323733ED900CC5A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F090223733ED900CC5A74 /* SceneDelegate.swift */; };
-		132F090523733ED900CC5A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F090423733ED900CC5A74 /* ViewController.swift */; };
-		132F090823733ED900CC5A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132F090623733ED900CC5A74 /* Main.storyboard */; };
+		132F090523733ED900CC5A74 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F090423733ED900CC5A74 /* MainViewController.swift */; };
 		132F090A23733EDA00CC5A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132F090923733EDA00CC5A74 /* Assets.xcassets */; };
 		132F090D23733EDA00CC5A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132F090B23733EDA00CC5A74 /* LaunchScreen.storyboard */; };
 		132F091823733EDA00CC5A74 /* iOSMeetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F091723733EDA00CC5A74 /* iOSMeetupTests.swift */; };
+		132F093023733EEE00CC5A74 /* iOSMeetupCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F092723733EED00CC5A74 /* iOSMeetupCore.framework */; };
+		132F093723733EEE00CC5A74 /* iOSMeetupCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F093623733EEE00CC5A74 /* iOSMeetupCoreTests.swift */; };
+		132F093923733EEE00CC5A74 /* iOSMeetupCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 132F092923733EED00CC5A74 /* iOSMeetupCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		132F093C23733EEE00CC5A74 /* iOSMeetupCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F092723733EED00CC5A74 /* iOSMeetupCore.framework */; };
+		132F093D23733EEE00CC5A74 /* iOSMeetupCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 132F092723733EED00CC5A74 /* iOSMeetupCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		132F094B23733F6200CC5A74 /* PostProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F094A23733F6200CC5A74 /* PostProviderProtocol.swift */; };
+		132F094D23733F9500CC5A74 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F094C23733F9500CC5A74 /* Post.swift */; };
+		132F094F237340CD00CC5A74 /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F094E237340CD00CC5A74 /* CoreError.swift */; };
+		132F09652373513800CC5A74 /* iOSMeetupUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F095C2373513800CC5A74 /* iOSMeetupUI.framework */; };
+		132F096C2373513800CC5A74 /* iOSMeetupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F096B2373513800CC5A74 /* iOSMeetupUITests.swift */; };
+		132F096E2373513800CC5A74 /* iOSMeetupUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 132F095E2373513800CC5A74 /* iOSMeetupUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		132F09712373513800CC5A74 /* iOSMeetupUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F095C2373513800CC5A74 /* iOSMeetupUI.framework */; };
+		132F09722373513800CC5A74 /* iOSMeetupUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 132F095C2373513800CC5A74 /* iOSMeetupUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		132F09812373523100CC5A74 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F09802373523100CC5A74 /* MainViewModel.swift */; };
+		132F0984237352A800CC5A74 /* MainViewModel+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F0983237352A800CC5A74 /* MainViewModel+Context.swift */; };
+		13FFB56923740F25000BB5A2 /* iOSMeetupCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F092723733EED00CC5A74 /* iOSMeetupCore.framework */; };
+		13FFB56B237411A6000BB5A2 /* MainViewModel+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB56A237411A6000BB5A2 /* MainViewModel+Action.swift */; };
+		13FFB56D237411CA000BB5A2 /* MainViewModel+Feedbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB56C237411CA000BB5A2 /* MainViewModel+Feedbacks.swift */; };
+		13FFB57023741778000BB5A2 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB56F23741778000BB5A2 /* TableViewDataSource.swift */; };
+		13FFB573237419B7000BB5A2 /* MainViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB572237419B7000BB5A2 /* MainViewController+Section.swift */; };
+		13FFB57523741A4A000BB5A2 /* MainViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB57423741A4A000BB5A2 /* MainViewController+Row.swift */; };
+		13FFB57723741A92000BB5A2 /* MainViewModel+PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB57623741A92000BB5A2 /* MainViewModel+PostRow.swift */; };
+		13FFB57A2374216F000BB5A2 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB5792374216F000BB5A2 /* UIScrollView.swift */; };
+		1BA7797618A3F7AD80BCC68D /* Pods_iOSMeetupUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBE1D17B58317606C457A31 /* Pods_iOSMeetupUI.framework */; };
+		278BC58428B6E82D0454940C /* Pods_iOSMeetupCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D90C8C9A4A3CF8D96492B01 /* Pods_iOSMeetupCore.framework */; };
+		37A6B922654C47A7B7F5F068 /* Pods_iOSMeetupTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EAADC2C540B77D8DD7FB28 /* Pods_iOSMeetupTests.framework */; };
+		B85463A9CBB13CB1518F6D10 /* Pods_iOSMeetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74719FF04C070D773FA6DB0F /* Pods_iOSMeetup.framework */; };
+		FB7C5C56F7A8F9DF0CCAE231 /* Pods_iOSMeetupCore_iOSMeetupCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E82152E258C5BF77819A5D /* Pods_iOSMeetupCore_iOSMeetupCoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,20 +52,125 @@
 			remoteGlobalIDString = 132F08FC23733ED900CC5A74;
 			remoteInfo = iOSMeetup;
 		};
+		132F093123733EEE00CC5A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132F08F523733ED900CC5A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132F092623733EED00CC5A74;
+			remoteInfo = iOSMeetupCore;
+		};
+		132F093323733EEE00CC5A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132F08F523733ED900CC5A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132F08FC23733ED900CC5A74;
+			remoteInfo = iOSMeetup;
+		};
+		132F093A23733EEE00CC5A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132F08F523733ED900CC5A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132F092623733EED00CC5A74;
+			remoteInfo = iOSMeetupCore;
+		};
+		132F09662373513800CC5A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132F08F523733ED900CC5A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132F095B2373513800CC5A74;
+			remoteInfo = iOSMeetupUI;
+		};
+		132F09682373513800CC5A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132F08F523733ED900CC5A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132F08FC23733ED900CC5A74;
+			remoteInfo = iOSMeetup;
+		};
+		132F096F2373513800CC5A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132F08F523733ED900CC5A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132F095B2373513800CC5A74;
+			remoteInfo = iOSMeetupUI;
+		};
+		132F09792373514300CC5A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132F08F523733ED900CC5A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132F092623733EED00CC5A74;
+			remoteInfo = iOSMeetupCore;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		132F094123733EEE00CC5A74 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				132F09722373513800CC5A74 /* iOSMeetupUI.framework in Embed Frameworks */,
+				132F093D23733EEE00CC5A74 /* iOSMeetupCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		07ED8F7367173B85B6E532A8 /* Pods-iOSMeetupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupTests.release.xcconfig"; path = "Target Support Files/Pods-iOSMeetupTests/Pods-iOSMeetupTests.release.xcconfig"; sourceTree = "<group>"; };
 		132F08FD23733ED900CC5A74 /* iOSMeetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMeetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132F090023733ED900CC5A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		132F090223733ED900CC5A74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		132F090423733ED900CC5A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		132F090723733ED900CC5A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		132F090423733ED900CC5A74 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		132F090923733EDA00CC5A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		132F090C23733EDA00CC5A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		132F090E23733EDA00CC5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132F091323733EDA00CC5A74 /* iOSMeetupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMeetupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		132F091723733EDA00CC5A74 /* iOSMeetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMeetupTests.swift; sourceTree = "<group>"; };
 		132F091923733EDA00CC5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132F092723733EED00CC5A74 /* iOSMeetupCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSMeetupCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		132F092923733EED00CC5A74 /* iOSMeetupCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSMeetupCore.h; sourceTree = "<group>"; };
+		132F092A23733EED00CC5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132F092F23733EEE00CC5A74 /* iOSMeetupCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMeetupCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		132F093623733EEE00CC5A74 /* iOSMeetupCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMeetupCoreTests.swift; sourceTree = "<group>"; };
+		132F093823733EEE00CC5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132F094A23733F6200CC5A74 /* PostProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProviderProtocol.swift; sourceTree = "<group>"; };
+		132F094C23733F9500CC5A74 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		132F094E237340CD00CC5A74 /* CoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
+		132F095C2373513800CC5A74 /* iOSMeetupUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSMeetupUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		132F095E2373513800CC5A74 /* iOSMeetupUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSMeetupUI.h; sourceTree = "<group>"; };
+		132F095F2373513800CC5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132F09642373513800CC5A74 /* iOSMeetupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMeetupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		132F096B2373513800CC5A74 /* iOSMeetupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMeetupUITests.swift; sourceTree = "<group>"; };
+		132F096D2373513800CC5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132F09802373523100CC5A74 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		132F0983237352A800CC5A74 /* MainViewModel+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewModel+Context.swift"; sourceTree = "<group>"; };
+		13FFB56A237411A6000BB5A2 /* MainViewModel+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewModel+Action.swift"; sourceTree = "<group>"; };
+		13FFB56C237411CA000BB5A2 /* MainViewModel+Feedbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewModel+Feedbacks.swift"; sourceTree = "<group>"; };
+		13FFB56F23741778000BB5A2 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		13FFB572237419B7000BB5A2 /* MainViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Section.swift"; sourceTree = "<group>"; };
+		13FFB57423741A4A000BB5A2 /* MainViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Row.swift"; sourceTree = "<group>"; };
+		13FFB57623741A92000BB5A2 /* MainViewModel+PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewModel+PostRow.swift"; sourceTree = "<group>"; };
+		13FFB5792374216F000BB5A2 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		23D9E916A2DC88CAB3BEF720 /* Pods-iOSMeetupUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupUI.release.xcconfig"; path = "Target Support Files/Pods-iOSMeetupUI/Pods-iOSMeetupUI.release.xcconfig"; sourceTree = "<group>"; };
+		441BC831B3D3B5C0A705923F /* Pods-iOSMeetup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetup.release.xcconfig"; path = "Target Support Files/Pods-iOSMeetup/Pods-iOSMeetup.release.xcconfig"; sourceTree = "<group>"; };
+		5D90C8C9A4A3CF8D96492B01 /* Pods_iOSMeetupCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMeetupCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74719FF04C070D773FA6DB0F /* Pods_iOSMeetup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMeetup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D503ACF98EA8B967991A4A2 /* Pods-iOSMeetupUI-iOSMeetupUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupUI-iOSMeetupUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSMeetupUI-iOSMeetupUITests/Pods-iOSMeetupUI-iOSMeetupUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		983B2D09BC6BFB30EEB2A5C8 /* Pods-iOSMeetupCore-iOSMeetupCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupCore-iOSMeetupCoreTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSMeetupCore-iOSMeetupCoreTests/Pods-iOSMeetupCore-iOSMeetupCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C1C67AF912C8336D84C1B7A /* Pods-iOSMeetup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetup.debug.xcconfig"; path = "Target Support Files/Pods-iOSMeetup/Pods-iOSMeetup.debug.xcconfig"; sourceTree = "<group>"; };
+		A7E82152E258C5BF77819A5D /* Pods_iOSMeetupCore_iOSMeetupCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMeetupCore_iOSMeetupCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC00BD78FC6307E665E5DC33 /* Pods-iOSMeetupCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupCore.release.xcconfig"; path = "Target Support Files/Pods-iOSMeetupCore/Pods-iOSMeetupCore.release.xcconfig"; sourceTree = "<group>"; };
+		BD67983465ED9320AD9AD8E9 /* Pods-iOSMeetupCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupCore.debug.xcconfig"; path = "Target Support Files/Pods-iOSMeetupCore/Pods-iOSMeetupCore.debug.xcconfig"; sourceTree = "<group>"; };
+		C5EAADC2C540B77D8DD7FB28 /* Pods_iOSMeetupTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMeetupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF7366999CB53D43B71484D /* Pods-iOSMeetupUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupUI.debug.xcconfig"; path = "Target Support Files/Pods-iOSMeetupUI/Pods-iOSMeetupUI.debug.xcconfig"; sourceTree = "<group>"; };
+		DBD305E80FFEB5B0AC77511A /* Pods-iOSMeetupUI-iOSMeetupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupUI-iOSMeetupUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSMeetupUI-iOSMeetupUITests/Pods-iOSMeetupUI-iOSMeetupUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB2EAB028D8E849F6BAC1D5C /* Pods_iOSMeetupUI_iOSMeetupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMeetupUI_iOSMeetupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE737570FF0683FE11B3594A /* Pods-iOSMeetupCore-iOSMeetupCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupCore-iOSMeetupCoreTests.release.xcconfig"; path = "Target Support Files/Pods-iOSMeetupCore-iOSMeetupCoreTests/Pods-iOSMeetupCore-iOSMeetupCoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA43E131504A697C171869E0 /* Pods-iOSMeetupTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMeetupTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSMeetupTests/Pods-iOSMeetupTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBE1D17B58317606C457A31 /* Pods_iOSMeetupUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMeetupUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +178,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132F093C23733EEE00CC5A74 /* iOSMeetupCore.framework in Frameworks */,
+				132F09712373513800CC5A74 /* iOSMeetupUI.framework in Frameworks */,
+				B85463A9CBB13CB1518F6D10 /* Pods_iOSMeetup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +188,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A6B922654C47A7B7F5F068 /* Pods_iOSMeetupTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F092423733EED00CC5A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278BC58428B6E82D0454940C /* Pods_iOSMeetupCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F092C23733EEE00CC5A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132F093023733EEE00CC5A74 /* iOSMeetupCore.framework in Frameworks */,
+				FB7C5C56F7A8F9DF0CCAE231 /* Pods_iOSMeetupCore_iOSMeetupCoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F09592373513800CC5A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFB56923740F25000BB5A2 /* iOSMeetupCore.framework in Frameworks */,
+				1BA7797618A3F7AD80BCC68D /* Pods_iOSMeetupUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F09612373513800CC5A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132F09652373513800CC5A74 /* iOSMeetupUI.framework in Frameworks */,
+				02E1E9121C50F0D575BD3784 /* Pods_iOSMeetupUI_iOSMeetupUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +234,14 @@
 			isa = PBXGroup;
 			children = (
 				132F08FF23733ED900CC5A74 /* iOSMeetup */,
+				132F092823733EED00CC5A74 /* iOSMeetupCore */,
+				132F095D2373513800CC5A74 /* iOSMeetupUI */,
 				132F091623733EDA00CC5A74 /* iOSMeetupTests */,
+				132F093523733EEE00CC5A74 /* iOSMeetupCoreTests */,
+				132F096A2373513800CC5A74 /* iOSMeetupUITests */,
 				132F08FE23733ED900CC5A74 /* Products */,
+				132F095223734E2300CC5A74 /* Frameworks */,
+				5EF2D6CCBEF84FD2E32440FC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +250,10 @@
 			children = (
 				132F08FD23733ED900CC5A74 /* iOSMeetup.app */,
 				132F091323733EDA00CC5A74 /* iOSMeetupTests.xctest */,
+				132F092723733EED00CC5A74 /* iOSMeetupCore.framework */,
+				132F092F23733EEE00CC5A74 /* iOSMeetupCoreTests.xctest */,
+				132F095C2373513800CC5A74 /* iOSMeetupUI.framework */,
+				132F09642373513800CC5A74 /* iOSMeetupUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,10 +261,9 @@
 		132F08FF23733ED900CC5A74 /* iOSMeetup */ = {
 			isa = PBXGroup;
 			children = (
+				13FFB5712374197B000BB5A2 /* Main */,
 				132F090023733ED900CC5A74 /* AppDelegate.swift */,
 				132F090223733ED900CC5A74 /* SceneDelegate.swift */,
-				132F090423733ED900CC5A74 /* ViewController.swift */,
-				132F090623733ED900CC5A74 /* Main.storyboard */,
 				132F090923733EDA00CC5A74 /* Assets.xcassets */,
 				132F090B23733EDA00CC5A74 /* LaunchScreen.storyboard */,
 				132F090E23733EDA00CC5A74 /* Info.plist */,
@@ -99,20 +280,172 @@
 			path = iOSMeetupTests;
 			sourceTree = "<group>";
 		};
+		132F092823733EED00CC5A74 /* iOSMeetupCore */ = {
+			isa = PBXGroup;
+			children = (
+				132F094923733F4D00CC5A74 /* API */,
+				132F094823733F3100CC5A74 /* Models */,
+				132F092923733EED00CC5A74 /* iOSMeetupCore.h */,
+				132F092A23733EED00CC5A74 /* Info.plist */,
+				132F094E237340CD00CC5A74 /* CoreError.swift */,
+			);
+			path = iOSMeetupCore;
+			sourceTree = "<group>";
+		};
+		132F093523733EEE00CC5A74 /* iOSMeetupCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				132F093623733EEE00CC5A74 /* iOSMeetupCoreTests.swift */,
+				132F093823733EEE00CC5A74 /* Info.plist */,
+			);
+			path = iOSMeetupCoreTests;
+			sourceTree = "<group>";
+		};
+		132F094823733F3100CC5A74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				132F094C23733F9500CC5A74 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		132F094923733F4D00CC5A74 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				132F094A23733F6200CC5A74 /* PostProviderProtocol.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		132F095223734E2300CC5A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74719FF04C070D773FA6DB0F /* Pods_iOSMeetup.framework */,
+				5D90C8C9A4A3CF8D96492B01 /* Pods_iOSMeetupCore.framework */,
+				A7E82152E258C5BF77819A5D /* Pods_iOSMeetupCore_iOSMeetupCoreTests.framework */,
+				C5EAADC2C540B77D8DD7FB28 /* Pods_iOSMeetupTests.framework */,
+				FBBE1D17B58317606C457A31 /* Pods_iOSMeetupUI.framework */,
+				EB2EAB028D8E849F6BAC1D5C /* Pods_iOSMeetupUI_iOSMeetupUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		132F095D2373513800CC5A74 /* iOSMeetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				13FFB5782374215B000BB5A2 /* Extensions */,
+				13FFB56E23741764000BB5A2 /* Views */,
+				132F095E2373513800CC5A74 /* iOSMeetupUI.h */,
+				132F095F2373513800CC5A74 /* Info.plist */,
+				132F09822373523800CC5A74 /* ViewModels */,
+			);
+			path = iOSMeetupUI;
+			sourceTree = "<group>";
+		};
+		132F096A2373513800CC5A74 /* iOSMeetupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				132F096B2373513800CC5A74 /* iOSMeetupUITests.swift */,
+				132F096D2373513800CC5A74 /* Info.plist */,
+			);
+			path = iOSMeetupUITests;
+			sourceTree = "<group>";
+		};
+		132F09822373523800CC5A74 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				132F09802373523100CC5A74 /* MainViewModel.swift */,
+				13FFB57623741A92000BB5A2 /* MainViewModel+PostRow.swift */,
+				132F0983237352A800CC5A74 /* MainViewModel+Context.swift */,
+				13FFB56A237411A6000BB5A2 /* MainViewModel+Action.swift */,
+				13FFB56C237411CA000BB5A2 /* MainViewModel+Feedbacks.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		13FFB56E23741764000BB5A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13FFB56F23741778000BB5A2 /* TableViewDataSource.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13FFB5712374197B000BB5A2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				132F090423733ED900CC5A74 /* MainViewController.swift */,
+				13FFB572237419B7000BB5A2 /* MainViewController+Section.swift */,
+				13FFB57423741A4A000BB5A2 /* MainViewController+Row.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		13FFB5782374215B000BB5A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13FFB5792374216F000BB5A2 /* UIScrollView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5EF2D6CCBEF84FD2E32440FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C1C67AF912C8336D84C1B7A /* Pods-iOSMeetup.debug.xcconfig */,
+				441BC831B3D3B5C0A705923F /* Pods-iOSMeetup.release.xcconfig */,
+				BD67983465ED9320AD9AD8E9 /* Pods-iOSMeetupCore.debug.xcconfig */,
+				AC00BD78FC6307E665E5DC33 /* Pods-iOSMeetupCore.release.xcconfig */,
+				983B2D09BC6BFB30EEB2A5C8 /* Pods-iOSMeetupCore-iOSMeetupCoreTests.debug.xcconfig */,
+				EE737570FF0683FE11B3594A /* Pods-iOSMeetupCore-iOSMeetupCoreTests.release.xcconfig */,
+				FA43E131504A697C171869E0 /* Pods-iOSMeetupTests.debug.xcconfig */,
+				07ED8F7367173B85B6E532A8 /* Pods-iOSMeetupTests.release.xcconfig */,
+				CFF7366999CB53D43B71484D /* Pods-iOSMeetupUI.debug.xcconfig */,
+				23D9E916A2DC88CAB3BEF720 /* Pods-iOSMeetupUI.release.xcconfig */,
+				7D503ACF98EA8B967991A4A2 /* Pods-iOSMeetupUI-iOSMeetupUITests.debug.xcconfig */,
+				DBD305E80FFEB5B0AC77511A /* Pods-iOSMeetupUI-iOSMeetupUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		132F092223733EED00CC5A74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132F093923733EEE00CC5A74 /* iOSMeetupCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F09572373513800CC5A74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132F096E2373513800CC5A74 /* iOSMeetupUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		132F08FC23733ED900CC5A74 /* iOSMeetup */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 132F091C23733EDA00CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetup" */;
 			buildPhases = (
+				896C77BAF22AA6143A989A28 /* [CP] Check Pods Manifest.lock */,
 				132F08F923733ED900CC5A74 /* Sources */,
 				132F08FA23733ED900CC5A74 /* Frameworks */,
 				132F08FB23733ED900CC5A74 /* Resources */,
+				132F094123733EEE00CC5A74 /* Embed Frameworks */,
+				42ECE81A8F54FBAE4708A4A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				132F093B23733EEE00CC5A74 /* PBXTargetDependency */,
+				132F09702373513800CC5A74 /* PBXTargetDependency */,
 			);
 			name = iOSMeetup;
 			productName = iOSMeetup;
@@ -123,6 +456,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 132F091F23733EDA00CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupTests" */;
 			buildPhases = (
+				5650ECA474A2356C27BE1B6C /* [CP] Check Pods Manifest.lock */,
 				132F090F23733EDA00CC5A74 /* Sources */,
 				132F091023733EDA00CC5A74 /* Frameworks */,
 				132F091123733EDA00CC5A74 /* Resources */,
@@ -135,6 +469,87 @@
 			name = iOSMeetupTests;
 			productName = iOSMeetupTests;
 			productReference = 132F091323733EDA00CC5A74 /* iOSMeetupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		132F092623733EED00CC5A74 /* iOSMeetupCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132F093E23733EEE00CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupCore" */;
+			buildPhases = (
+				A3DDD87F0ECB9CD74A787D2A /* [CP] Check Pods Manifest.lock */,
+				132F092223733EED00CC5A74 /* Headers */,
+				132F092323733EED00CC5A74 /* Sources */,
+				132F092423733EED00CC5A74 /* Frameworks */,
+				132F092523733EED00CC5A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSMeetupCore;
+			productName = iOSMeetupCore;
+			productReference = 132F092723733EED00CC5A74 /* iOSMeetupCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		132F092E23733EEE00CC5A74 /* iOSMeetupCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132F094223733EEE00CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupCoreTests" */;
+			buildPhases = (
+				CC9E525EFAA3FE0611921D1E /* [CP] Check Pods Manifest.lock */,
+				132F092B23733EEE00CC5A74 /* Sources */,
+				132F092C23733EEE00CC5A74 /* Frameworks */,
+				132F092D23733EEE00CC5A74 /* Resources */,
+				4B430408A51DF74C0D1AEBC1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				132F093223733EEE00CC5A74 /* PBXTargetDependency */,
+				132F093423733EEE00CC5A74 /* PBXTargetDependency */,
+			);
+			name = iOSMeetupCoreTests;
+			productName = iOSMeetupCoreTests;
+			productReference = 132F092F23733EEE00CC5A74 /* iOSMeetupCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		132F095B2373513800CC5A74 /* iOSMeetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132F09732373513800CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupUI" */;
+			buildPhases = (
+				92929186BA83CBDD4D5748EF /* [CP] Check Pods Manifest.lock */,
+				132F09572373513800CC5A74 /* Headers */,
+				132F09582373513800CC5A74 /* Sources */,
+				132F09592373513800CC5A74 /* Frameworks */,
+				132F095A2373513800CC5A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				132F097A2373514300CC5A74 /* PBXTargetDependency */,
+			);
+			name = iOSMeetupUI;
+			productName = iOSMeetupUI;
+			productReference = 132F095C2373513800CC5A74 /* iOSMeetupUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		132F09632373513800CC5A74 /* iOSMeetupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132F09762373513800CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupUITests" */;
+			buildPhases = (
+				F68BB915D7D281CB7BE66403 /* [CP] Check Pods Manifest.lock */,
+				132F09602373513800CC5A74 /* Sources */,
+				132F09612373513800CC5A74 /* Frameworks */,
+				132F09622373513800CC5A74 /* Resources */,
+				EDEE0B3A146BC0E774EB2655 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				132F09672373513800CC5A74 /* PBXTargetDependency */,
+				132F09692373513800CC5A74 /* PBXTargetDependency */,
+			);
+			name = iOSMeetupUITests;
+			productName = iOSMeetupUITests;
+			productReference = 132F09642373513800CC5A74 /* iOSMeetupUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -154,6 +569,22 @@
 						CreatedOnToolsVersion = 11.2;
 						TestTargetID = 132F08FC23733ED900CC5A74;
 					};
+					132F092623733EED00CC5A74 = {
+						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
+					};
+					132F092E23733EEE00CC5A74 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 132F08FC23733ED900CC5A74;
+					};
+					132F095B2373513800CC5A74 = {
+						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
+					};
+					132F09632373513800CC5A74 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 132F08FC23733ED900CC5A74;
+					};
 				};
 			};
 			buildConfigurationList = 132F08F823733ED900CC5A74 /* Build configuration list for PBXProject "iOSMeetup" */;
@@ -170,7 +601,11 @@
 			projectRoot = "";
 			targets = (
 				132F08FC23733ED900CC5A74 /* iOSMeetup */,
+				132F092623733EED00CC5A74 /* iOSMeetupCore */,
+				132F095B2373513800CC5A74 /* iOSMeetupUI */,
 				132F091223733EDA00CC5A74 /* iOSMeetupTests */,
+				132F092E23733EEE00CC5A74 /* iOSMeetupCoreTests */,
+				132F09632373513800CC5A74 /* iOSMeetupUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +617,6 @@
 			files = (
 				132F090D23733EDA00CC5A74 /* LaunchScreen.storyboard in Resources */,
 				132F090A23733EDA00CC5A74 /* Assets.xcassets in Resources */,
-				132F090823733ED900CC5A74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,16 +627,232 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		132F092523733EED00CC5A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F092D23733EEE00CC5A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F095A2373513800CC5A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F09622373513800CC5A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42ECE81A8F54FBAE4708A4A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMeetup/Pods-iOSMeetup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMeetup/Pods-iOSMeetup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSMeetup/Pods-iOSMeetup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B430408A51DF74C0D1AEBC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMeetupCore-iOSMeetupCoreTests/Pods-iOSMeetupCore-iOSMeetupCoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMeetupCore-iOSMeetupCoreTests/Pods-iOSMeetupCore-iOSMeetupCoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSMeetupCore-iOSMeetupCoreTests/Pods-iOSMeetupCore-iOSMeetupCoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5650ECA474A2356C27BE1B6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSMeetupTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		896C77BAF22AA6143A989A28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSMeetup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92929186BA83CBDD4D5748EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSMeetupUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3DDD87F0ECB9CD74A787D2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSMeetupCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC9E525EFAA3FE0611921D1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSMeetupCore-iOSMeetupCoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDEE0B3A146BC0E774EB2655 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMeetupUI-iOSMeetupUITests/Pods-iOSMeetupUI-iOSMeetupUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMeetupUI-iOSMeetupUITests/Pods-iOSMeetupUI-iOSMeetupUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSMeetupUI-iOSMeetupUITests/Pods-iOSMeetupUI-iOSMeetupUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F68BB915D7D281CB7BE66403 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSMeetupUI-iOSMeetupUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		132F08F923733ED900CC5A74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132F090523733ED900CC5A74 /* ViewController.swift in Sources */,
+				132F090523733ED900CC5A74 /* MainViewController.swift in Sources */,
 				132F090123733ED900CC5A74 /* AppDelegate.swift in Sources */,
+				13FFB573237419B7000BB5A2 /* MainViewController+Section.swift in Sources */,
 				132F090323733ED900CC5A74 /* SceneDelegate.swift in Sources */,
+				13FFB57523741A4A000BB5A2 /* MainViewController+Row.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +864,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		132F092323733EED00CC5A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132F094F237340CD00CC5A74 /* CoreError.swift in Sources */,
+				132F094B23733F6200CC5A74 /* PostProviderProtocol.swift in Sources */,
+				132F094D23733F9500CC5A74 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F092B23733EEE00CC5A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132F093723733EEE00CC5A74 /* iOSMeetupCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F09582373513800CC5A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFB56D237411CA000BB5A2 /* MainViewModel+Feedbacks.swift in Sources */,
+				13FFB57023741778000BB5A2 /* TableViewDataSource.swift in Sources */,
+				132F09812373523100CC5A74 /* MainViewModel.swift in Sources */,
+				132F0984237352A800CC5A74 /* MainViewModel+Context.swift in Sources */,
+				13FFB57723741A92000BB5A2 /* MainViewModel+PostRow.swift in Sources */,
+				13FFB57A2374216F000BB5A2 /* UIScrollView.swift in Sources */,
+				13FFB56B237411A6000BB5A2 /* MainViewModel+Action.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132F09602373513800CC5A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132F096C2373513800CC5A74 /* iOSMeetupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -222,17 +912,44 @@
 			target = 132F08FC23733ED900CC5A74 /* iOSMeetup */;
 			targetProxy = 132F091423733EDA00CC5A74 /* PBXContainerItemProxy */;
 		};
+		132F093223733EEE00CC5A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132F092623733EED00CC5A74 /* iOSMeetupCore */;
+			targetProxy = 132F093123733EEE00CC5A74 /* PBXContainerItemProxy */;
+		};
+		132F093423733EEE00CC5A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132F08FC23733ED900CC5A74 /* iOSMeetup */;
+			targetProxy = 132F093323733EEE00CC5A74 /* PBXContainerItemProxy */;
+		};
+		132F093B23733EEE00CC5A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132F092623733EED00CC5A74 /* iOSMeetupCore */;
+			targetProxy = 132F093A23733EEE00CC5A74 /* PBXContainerItemProxy */;
+		};
+		132F09672373513800CC5A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132F095B2373513800CC5A74 /* iOSMeetupUI */;
+			targetProxy = 132F09662373513800CC5A74 /* PBXContainerItemProxy */;
+		};
+		132F09692373513800CC5A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132F08FC23733ED900CC5A74 /* iOSMeetup */;
+			targetProxy = 132F09682373513800CC5A74 /* PBXContainerItemProxy */;
+		};
+		132F09702373513800CC5A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132F095B2373513800CC5A74 /* iOSMeetupUI */;
+			targetProxy = 132F096F2373513800CC5A74 /* PBXContainerItemProxy */;
+		};
+		132F097A2373514300CC5A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132F092623733EED00CC5A74 /* iOSMeetupCore */;
+			targetProxy = 132F09792373514300CC5A74 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		132F090623733ED900CC5A74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				132F090723733ED900CC5A74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		132F090B23733EDA00CC5A74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,7 +1077,9 @@
 		};
 		132F091D23733EDA00CC5A74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1C67AF912C8336D84C1B7A /* Pods-iOSMeetup.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -378,7 +1097,9 @@
 		};
 		132F091E23733EDA00CC5A74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441BC831B3D3B5C0A705923F /* Pods-iOSMeetup.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -396,8 +1117,9 @@
 		};
 		132F092023733EDA00CC5A74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA43E131504A697C171869E0 /* Pods-iOSMeetupTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -418,8 +1140,9 @@
 		};
 		132F092123733EDA00CC5A74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07ED8F7367173B85B6E532A8 /* Pods-iOSMeetupTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -431,6 +1154,208 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMeetup.app/iOSMeetup";
+			};
+			name = Release;
+		};
+		132F093F23733EEE00CC5A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD67983465ED9320AD9AD8E9 /* Pods-iOSMeetupCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iOSMeetupCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		132F094023733EEE00CC5A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC00BD78FC6307E665E5DC33 /* Pods-iOSMeetupCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iOSMeetupCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		132F094323733EEE00CC5A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983B2D09BC6BFB30EEB2A5C8 /* Pods-iOSMeetupCore-iOSMeetupCoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = iOSMeetupCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMeetup.app/iOSMeetup";
+			};
+			name = Debug;
+		};
+		132F094423733EEE00CC5A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE737570FF0683FE11B3594A /* Pods-iOSMeetupCore-iOSMeetupCoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = iOSMeetupCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMeetup.app/iOSMeetup";
+			};
+			name = Release;
+		};
+		132F09742373513800CC5A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF7366999CB53D43B71484D /* Pods-iOSMeetupUI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iOSMeetupUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		132F09752373513800CC5A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D9E916A2DC88CAB3BEF720 /* Pods-iOSMeetupUI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iOSMeetupUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		132F09772373513800CC5A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D503ACF98EA8B967991A4A2 /* Pods-iOSMeetupUI-iOSMeetupUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = iOSMeetupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMeetup.app/iOSMeetup";
+			};
+			name = Debug;
+		};
+		132F09782373513800CC5A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD305E80FFEB5B0AC77511A /* Pods-iOSMeetupUI-iOSMeetupUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = iOSMeetupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.iOSMeetupUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,6 +1389,42 @@
 			buildConfigurations = (
 				132F092023733EDA00CC5A74 /* Debug */,
 				132F092123733EDA00CC5A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132F093E23733EEE00CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132F093F23733EEE00CC5A74 /* Debug */,
+				132F094023733EEE00CC5A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132F094223733EEE00CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132F094323733EEE00CC5A74 /* Debug */,
+				132F094423733EEE00CC5A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132F09732373513800CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132F09742373513800CC5A74 /* Debug */,
+				132F09752373513800CC5A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132F09762373513800CC5A74 /* Build configuration list for PBXNativeTarget "iOSMeetupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132F09772373513800CC5A74 /* Debug */,
+				132F09782373513800CC5A74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
