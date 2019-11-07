@@ -13,10 +13,6 @@ import ReactiveSwift
 import SnapKit
 import UIKit
 
-enum Row: Hashable {
-    case empty
-}
-
 class MainViewController: UIViewController {
     let tableView = UITableView(frame: .zero, style: .plain)
     let dataSource: TableViewDataSource<Section, Row>
@@ -49,28 +45,29 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Posts"
+        navigationItem.reactive.title <~ viewModel
+            .posts
+            .map(\.count)
+            .map { "\($0) Posts" }
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        bindDataSource()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         bindPaging()
-        
-//        viewModel.execute(action: .fetchPosts)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        bindDataSource()
     }
     
-    fileprivate func setupTableView() {
-        
-    }
     
     fileprivate func bindPaging() {
         reactive.lifetime += viewModel.bindExecute() <~ tableView
             .reactive
             .isNearBottom(threshold: 50)
-        .skipRepeats()
+            .skipRepeats()
             .filter { $0 }
             .map(value: .fetchPosts)
     }
@@ -78,16 +75,10 @@ class MainViewController: UIViewController {
     fileprivate func bindDataSource() {
         reactive.lifetime += dataSource.reactive.apply(animatingDifferences: true) <~ viewModel
             .posts
-            .map { rows -> [(Section, [Row])] in
-                return [
-                    (
-                        Section.title(header: "Recent Post", footer: nil),
-                        rows.map(Row.post)
-                    )
-                ]
-        }
-        .producer
-        .observe(on: UIScheduler())
+            .map(rowsForDataSource)
+            .producer
+            .take(until: reactive.viewWillDisappear)
+            .observe(on: UIScheduler())
     }
 }
 
@@ -96,7 +87,8 @@ extension MainViewController {
                              indexPath: IndexPath,
                              row: Row) -> UITableViewCell? {
         
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell",
+                                                 for: indexPath)
         switch row {
         case let .post(value):
             cell.textLabel?.text = value.body
@@ -106,5 +98,16 @@ extension MainViewController {
         return cell
         
     }
+}
+
+private func rowsForDataSource(_ rows: [MainViewModel.PostRow]) -> [(MainViewController.Section, [MainViewController.Row])] {
+    
+    [
+        (
+            MainViewController.Section.title(header: nil, footer: nil),
+            rows.map(MainViewController.Row.post)
+        )
+    ]
+    
 }
 
