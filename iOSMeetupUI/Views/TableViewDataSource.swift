@@ -17,22 +17,9 @@ public protocol BindableDataSource: NSObject {
     func apply(_ snaphsot: [(SectionIdentifier, [ItemIdentifier])], animatingDifferences: Bool, completion: (() -> Void)?)
 }
 
-
-public final class TableViewDataSource<SectionIdentifier: Hashable, ItemIdentifier: Hashable>
-: UITableViewDiffableDataSource<SectionIdentifier, ItemIdentifier>
-, BindableDataSource {
-    
-    let sections: Atomic<[SectionIdentifier]> = .init([])
-    
-    public func sectionIdentifer(at section: Int) -> SectionIdentifier {
-        return sections.modify { $0[section] }
-    }
-    
-    public override func apply(_ snapshot: NSDiffableDataSourceSnapshot<SectionIdentifier, ItemIdentifier>, animatingDifferences: Bool = true, completion: (() -> Void)? = nil) {
-        
-        sections.modify { $0 = snapshot.sectionIdentifiers }
-        super.apply(snapshot, animatingDifferences: animatingDifferences, completion: completion)
-    }
+extension UITableViewDiffableDataSource: BindableDataSource {
+    public typealias SectionIdentifier = SectionIdentifierType
+    public typealias ItemIdentifier = ItemIdentifierType
     
     public func apply(_ snaphsot: [(SectionIdentifier, [ItemIdentifier])],
                       animatingDifferences: Bool = true,
@@ -53,5 +40,21 @@ public extension Reactive where Base: BindableDataSource {
         return makeBindingTarget { (dataSource, snapshot) in
             dataSource.apply(snapshot, animatingDifferences: animatingDifferences, completion: nil)
         }
+    }
+}
+
+public final class TableViewDataSource<SectionIdentifier: Hashable, ItemIdentifier: Hashable>
+: UITableViewDiffableDataSource<SectionIdentifier, ItemIdentifier> {
+    
+    let sections: Atomic<[SectionIdentifier]> = .init([])
+    
+    public func sectionIdentifer(at section: Int) -> SectionIdentifier {
+        return sections.modify { $0[section] }
+    }
+    
+    public override func apply(_ snapshot: NSDiffableDataSourceSnapshot<SectionIdentifier, ItemIdentifier>, animatingDifferences: Bool = true, completion: (() -> Void)? = nil) {
+        
+        sections.modify { $0 = snapshot.sectionIdentifiers }
+        super.apply(snapshot, animatingDifferences: animatingDifferences, completion: completion)
     }
 }
