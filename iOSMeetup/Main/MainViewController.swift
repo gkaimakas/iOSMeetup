@@ -101,7 +101,6 @@ extension MainViewController {
 }
 
 private func rowsForDataSource(_ rows: [MainViewModel.PostRow]) -> [(MainViewController.Section, [MainViewController.Row])] {
-    
     [
         (
             MainViewController.Section.title(header: nil, footer: nil),

@@ -45,7 +45,7 @@ public final class MainViewModel {
     }
     
     public func bindExecute() -> BindingTarget<Action> {
-        BindingTarget<Action>(lifetime: lifetime) { [weak self] action in
+        .init(lifetime: lifetime) { [weak self] action in
             self?.execute(action: action)
         }
     }
@@ -98,7 +98,6 @@ extension MainViewModel {
         case fetchPosts
         case fetchPostsSucceeded([Post])
         case fetchPostsFailed(CoreError)
-        case refreshPosts
     }
 }
 
