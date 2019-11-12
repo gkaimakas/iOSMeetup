@@ -52,7 +52,8 @@ class MainViewController: UIViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        tableView.register(UITableViewCell.self,
+                           forCellReuseIdentifier: "UITableViewCell")
         bindPaging()
     }
     

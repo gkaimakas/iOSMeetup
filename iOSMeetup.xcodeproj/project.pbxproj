@@ -29,6 +29,7 @@
 		132F09722373513800CC5A74 /* iOSMeetupUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 132F095C2373513800CC5A74 /* iOSMeetupUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		132F09812373523100CC5A74 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F09802373523100CC5A74 /* MainViewModel.swift */; };
 		132F0984237352A800CC5A74 /* MainViewModel+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F0983237352A800CC5A74 /* MainViewModel+Context.swift */; };
+		13944EE7237B5F6200C90686 /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13944EE6237B5F6200C90686 /* Reactive.swift */; };
 		13FFB56923740F25000BB5A2 /* iOSMeetupCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132F092723733EED00CC5A74 /* iOSMeetupCore.framework */; };
 		13FFB56B237411A6000BB5A2 /* MainViewModel+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB56A237411A6000BB5A2 /* MainViewModel+Action.swift */; };
 		13FFB56D237411CA000BB5A2 /* MainViewModel+Feedbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB56C237411CA000BB5A2 /* MainViewModel+Feedbacks.swift */; };
@@ -147,6 +148,7 @@
 		132F096D2373513800CC5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132F09802373523100CC5A74 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		132F0983237352A800CC5A74 /* MainViewModel+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewModel+Context.swift"; sourceTree = "<group>"; };
+		13944EE6237B5F6200C90686 /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
 		13FFB56A237411A6000BB5A2 /* MainViewModel+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewModel+Action.swift"; sourceTree = "<group>"; };
 		13FFB56C237411CA000BB5A2 /* MainViewModel+Feedbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewModel+Feedbacks.swift"; sourceTree = "<group>"; };
 		13FFB56F23741778000BB5A2 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		132F092823733EED00CC5A74 /* iOSMeetupCore */ = {
 			isa = PBXGroup;
 			children = (
+				13944EE5237B5F4A00C90686 /* Extensions */,
 				132F094923733F4D00CC5A74 /* API */,
 				132F094823733F3100CC5A74 /* Models */,
 				132F092923733EED00CC5A74 /* iOSMeetupCore.h */,
@@ -355,12 +358,20 @@
 			isa = PBXGroup;
 			children = (
 				132F09802373523100CC5A74 /* MainViewModel.swift */,
-				13FFB57623741A92000BB5A2 /* MainViewModel+PostRow.swift */,
 				132F0983237352A800CC5A74 /* MainViewModel+Context.swift */,
-				13FFB56A237411A6000BB5A2 /* MainViewModel+Action.swift */,
 				13FFB56C237411CA000BB5A2 /* MainViewModel+Feedbacks.swift */,
+				13FFB56A237411A6000BB5A2 /* MainViewModel+Action.swift */,
+				13FFB57623741A92000BB5A2 /* MainViewModel+PostRow.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		13944EE5237B5F4A00C90686 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13944EE6237B5F6200C90686 /* Reactive.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		13FFB56E23741764000BB5A2 /* Views */ = {
@@ -868,6 +879,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13944EE7237B5F6200C90686 /* Reactive.swift in Sources */,
 				132F094F237340CD00CC5A74 /* CoreError.swift in Sources */,
 				132F094B23733F6200CC5A74 /* PostProviderProtocol.swift in Sources */,
 				132F094D23733F9500CC5A74 /* Post.swift in Sources */,

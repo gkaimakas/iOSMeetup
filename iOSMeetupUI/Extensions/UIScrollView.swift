@@ -17,9 +17,7 @@ public extension Reactive where Base: UIScrollView {
         }
         
         return signal(for: \.contentOffset)
-            .map { point -> Bool in
-                isNearBottomEdge(scrollView: self.base, edgeOffset: threshold)
-        }
-        .skipRepeats()
+            .map { _ in isNearBottomEdge(scrollView: self.base, edgeOffset: threshold) }
+            .skipRepeats()
     }
 }
