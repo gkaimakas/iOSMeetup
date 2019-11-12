@@ -34,12 +34,6 @@ public final class PostProvider: PostProviderProtocol {
     }
 }
 
-extension PostProvider {
-    static func postsPage(offset: Int, limit: Int) -> URLRequest {
-        fatalError()
-    }
-}
-
 extension Signal where Value == (Data, URLResponse) {
     func decode<T: Decodable>(_ type: T.Type) -> Signal<T, CoreError> {
         
